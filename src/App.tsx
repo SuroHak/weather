@@ -7,12 +7,15 @@ import background from './assets/background.png';
 import { catchCurrentPos, handleCurrentPos, LocaleTypes } from './helpers';
 import { useDispatch } from 'react-redux';
 import { SET_ACTIVE_LANG } from './store';
+import IndexedDB from './services/indexedDB';
 
 const App = (): JSX.Element => {
     const dispatch = useDispatch();
 
     useEffect(() => {
         const { geolocation , language } = navigator;
+
+        IndexedDB.removeAllData();
 
         geolocation.getCurrentPosition(handleCurrentPos, catchCurrentPos);
 
