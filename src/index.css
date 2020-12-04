@@ -68,6 +68,7 @@ code {
   align-items: flex-end;
   margin-top: -8px;
   position: absolute;
+  overflow-x: scroll;
 }
 
 .citi-tab {
