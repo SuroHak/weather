@@ -1,7 +1,7 @@
 // urls
 import { ICities } from './types';
 
-export const apiBaseUrl = 'http://api.openweathermap.org/';
+export const apiBaseUrl = 'https://api.openweathermap.org/';
 export const apiKey = '2e11403a57273bd016db99e5e96d99d1';
 
 // default cities
