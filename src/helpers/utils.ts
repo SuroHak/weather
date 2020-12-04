@@ -50,7 +50,7 @@ export const getWeatherByLatLong = async ({ lat, lon, unit = 'metric', isStore }
             dispatch({ type: SET_CURRENT_WEATHER, currentWeather: res });
         }
 
-        await IndexedDB.addData({ key: res.city.name, ...res });
+        await IndexedDB.addData({ key: res.city.name.toLowerCase(), ...res });
 
         return res;
     } catch (err) {
