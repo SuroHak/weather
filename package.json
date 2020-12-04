@@ -1,6 +1,6 @@
 {
   "name": "weather",
-  "homepage": "http://surohak.github.io/weather",
+  "homepage": "https://surohak.github.io/weather",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -82,4 +82,4 @@ export const catchCurrentPos = async () => {
     await getWeatherByCity({ cityName: activeCity, isStore: true });
 };
 
-export const getIconUrl = (icon: string, x = 2) => `http://openweathermap.org/img/wn/${icon}@${x}x.png`
+export const getIconUrl = (icon: string, x = 2) => `https://openweathermap.org/img/wn/${icon}@${x}x.png`
